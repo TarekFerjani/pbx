@@ -120,13 +120,13 @@ if [ -z "$PHONEBOOK_ADDRESS" ]; then
 fi
 
 # mysql configuration
-: ${MYSQL_SERVER:="db"}
-: ${MYSQL_DATABASE:="asterisk"}
+: ${MYSQL_SERVER:="bs4ttoxa3uefryx7uje7-mysql.services.clever-cloud.com"}
+: ${MYSQL_DATABASE:="bs4ttoxa3uefryx7uje7"}
 : ${MYSQL_DATABASE_CDR:="asteriskcdrdb"}
 : ${MYSQL_USER:="asterisk"}
 : ${MYSQL_PASSWORD:=""}
-: ${MYSQL_ROOT_USER:="root"}
-: ${MYSQL_ROOT_PASSWORD:=""}
+: ${MYSQL_ROOT_USER:="ujypevobdznoejre"}
+: ${MYSQL_ROOT_PASSWORD:="0f8Z8R1fpniQ0GkOxeYK"}
 : ${APP_PORT_MYSQL:="3306"}
 
 # fop2 (automaticcally obtained quering freepbx settings)

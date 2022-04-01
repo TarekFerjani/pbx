@@ -497,7 +497,7 @@ RUN set -xe && \
 ## curl -fSL https://github.com/FreePBX/framework/archive/release/${FREEPBX_VER_FRAMEWORK}.tar.gz| tar xfz - --strip 1 -C freepbx
 
 ## copy external sources files again
-ADD build/ /usr/src/
+ADD izpbx-asterisk/build/ /usr/src/
 
 ## deploy freepbx
 RUN set -xe && \
@@ -590,7 +590,7 @@ RUN set -xe && \
 ### fixes and workarounds
 
 ## copy external sources files
-ADD patch/ /usr/src/
+ADD izpbx-asterisk/patch/ /usr/src/
 
 ## FIXME: fix for FreePBX 16 upgrade error (20211121: MUST be removed in a future release for better security)
 ## other problem when upgrading to FreePBX 16: https://issues.freepbx.org/browse/FREEPBX-22842
@@ -653,7 +653,7 @@ ENV APP_BUILD_COMMIT="${APP_BUILD_COMMIT}"
 ENV APP_BUILD_DATE="${APP_BUILD_DATE}"
 
 ## add files to container
-ADD rootfs Dockerfile README.md /
+ADD izpbx-asterisk/rootfs Dockerfile README.md /
 
 ## start the container process
 ENTRYPOINT ["/entrypoint.sh"]
